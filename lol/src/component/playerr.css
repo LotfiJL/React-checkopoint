@@ -1,0 +1,34 @@
+.card-container {
+  width: 18rem;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+   height: auto;
+}
+
+.card-container {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply animation */
+.card-container:hover {
+  animation: rotate 20s linear infinite;
+}
